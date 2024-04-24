@@ -25,15 +25,16 @@ function ImageWithCaption() {
       <nav className="bg-white shadow">{/* Existing nav content */}</nav>
 
       <section className=" mx-auto p-1">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 ">
           {/* Example block for one image */}
-          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
             <Image
               src="/cry.png"
-              alt="Photo 1"
-              width={250}
-              height={100}
+              alt="Photo 2"
+              width={260} // Same dimensions as the first image
+              height={260}
               layout="responsive"
+              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
             />
             {hideDescriptions ? null : (
               <div className="">
@@ -50,13 +51,14 @@ function ImageWithCaption() {
             )}
           </div>
           {/* Example block for one image */}
-          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
             <Image
               src="/cry.png"
-              alt="Photo 1"
-              width={250}
-              height={100}
+              alt="Photo 2"
+              width={260} // Same dimensions as the first image
+              height={260}
               layout="responsive"
+              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
             />
             {hideDescriptions ? null : (
               <div className="">
@@ -66,7 +68,8 @@ function ImageWithCaption() {
 
                 <div>
                   <p className="text-gray-600 mt-1 text-[10px] p-2">
-                    Explore the beauty of landscapes through our photography.
+                    Other responsive settings correctly. Here's how to do it
+                    without introducing new classes:
                   </p>
                 </div>
               </div>
@@ -74,14 +77,43 @@ function ImageWithCaption() {
           </div>
 
           {/* Repeat similar blocks for other images */}
+          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+            <div className="">
+              {' '}
+              <Image
+                src="/cabane.jpg"
+                alt="Photo 2"
+                width={260} // Same dimensions as the first image
+                height={260}
+                layout="responsive"
+                className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+              />
+            </div>
+
+            {hideDescriptions ? null : (
+              <div className="">
+                <h3 className=" px-2 pt-4 text-xs font-semibold">
+                  Stunning Landscapes
+                </h3>
+
+                <div>
+                  <p className="text-gray-600 mt-1 text-[10px] p-2">
+                    Explore the beauty of landscapes through our photography.
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+
           {/* Example block for one image */}
-          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
             <Image
               src="/cry.png"
-              alt="Photo 1"
-              width={250}
-              height={100}
+              alt="Photo 2"
+              width={260} // Same dimensions as the first image
+              height={260}
               layout="responsive"
+              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
             />
             {hideDescriptions ? null : (
               <div className="">
@@ -99,15 +131,19 @@ function ImageWithCaption() {
           </div>
           {/* Example block for one image */}
           {/* Example block for one image */}
-          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white ">
-            <Image
-              src="/cabane.jpg"
-              alt="Photo 1"
-              width={100}
-              height={100}
-              layout="responsive"
-              //fill="content"
-            />
+          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+            <div className="">
+              {' '}
+              <Image
+                src="/cabane.jpg"
+                alt="Photo 2"
+                width={260} // Same dimensions as the first image
+                height={260}
+                layout="responsive"
+                className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+              />
+            </div>
+
             {hideDescriptions ? null : (
               <div className="">
                 <h3 className=" px-2 pt-4 text-xs font-semibold">
@@ -124,14 +160,16 @@ function ImageWithCaption() {
           </div>
           {/* Example block for one image */}
 
-          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
             <Image
               src="/cry.png"
-              alt="Photo 1"
-              width={250}
-              height={100}
+              alt="Photo 2"
+              width={260} // Same dimensions as the first image
+              height={260}
               layout="responsive"
+              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
             />
+
             {hideDescriptions ? null : (
               <div className="">
                 <h3 className=" px-2 pt-4 text-xs font-semibold">
