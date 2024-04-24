@@ -99,13 +99,14 @@ function ImageWithCaption() {
           </div>
           {/* Example block for one image */}
           {/* Example block for one image */}
-          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white ">
             <Image
-              src="/cry.png"
+              src="/cabane.jpg"
               alt="Photo 1"
-              width={250}
+              width={100}
               height={100}
               layout="responsive"
+              //fill="content"
             />
             {hideDescriptions ? null : (
               <div className="">
