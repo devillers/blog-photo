@@ -1,6 +1,6 @@
 'use client'; // This marks the entire file as a Client Component
 import Image from 'next/image';
-import Modal from '@/components/modal';
+import Modal from '../components/modal';
 
 import React, { useState } from 'react';
 function ImageWithCaption() {
