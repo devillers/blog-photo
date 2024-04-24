@@ -34,3 +34,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Next.js specific
+.next/
+out/
+
+# Production build
+build/
+dist/
+
+# MacOS system files
+.DS_Store
