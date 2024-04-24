@@ -36,12 +36,16 @@ function ImageWithCaption() {
               layout="responsive"
             />
             {hideDescriptions ? null : (
-              <div className="p-4">
-                <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
+              <div className="">
+                <h3 className=" px-2 pt-4 text-xs font-semibold">
+                  Stunning Landscapes
+                </h3>
 
-                <p className="text-gray-600 mt-2 text-[10px]">
-                  Explore the beauty of landscapes through our photography.
-                </p>
+                <div>
+                  <p className="text-gray-600 mt-1 text-[10px] p-2">
+                    Explore the beauty of landscapes through our photography.
+                  </p>
+                </div>
               </div>
             )}
           </div>
@@ -58,7 +62,7 @@ function ImageWithCaption() {
               <div className="p-4">
                 <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
 
-                <p className="text-gray-600 mt-2 text-[10px]">
+                <p className="text-gray-600 mt-2 text-[10px] text-justify">
                   Explore the beauty of landscapes through our photography.
                 </p>
               </div>
@@ -79,7 +83,7 @@ function ImageWithCaption() {
               <div className="p-4">
                 <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
 
-                <p className="text-gray-600 mt-2 text-[10px]">
+                <p className="text-gray-600 mt-2 text-[10px] text-justify">
                   Explore the beauty of landscapes through our photography.
                 </p>
               </div>
@@ -99,7 +103,27 @@ function ImageWithCaption() {
               <div className="p-4">
                 <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
 
-                <p className="text-gray-600 mt-2 text-[10px]">
+                <p className="text-gray-600 mt-2 text-[10px] text-justify">
+                  Explore the beauty of landscapes through our photography.
+                </p>
+              </div>
+            )}
+          </div>
+          {/* Example block for one image */}
+          {/* Example block for one image */}
+          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+            <Image
+              src="/cry.png"
+              alt="Photo 1"
+              width={250}
+              height={100}
+              layout="responsive"
+            />
+            {hideDescriptions ? null : (
+              <div className="p-4">
+                <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
+
+                <p className="text-gray-600 mt-2 text-[10px] text-justify">
                   Explore the beauty of landscapes through our photography.
                 </p>
               </div>
