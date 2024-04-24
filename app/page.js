@@ -27,14 +27,14 @@ function ImageWithCaption() {
       <section className=" mx-auto p-1">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 ">
           {/* Example block for one image */}
-          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
             <Image
               src="/cry.png"
               alt="Photo 2"
               width={260} // Same dimensions as the first image
               height={260}
               layout="responsive"
-              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+              className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
             />
             {hideDescriptions ? null : (
               <div className="">
@@ -51,14 +51,14 @@ function ImageWithCaption() {
             )}
           </div>
           {/* Example block for one image */}
-          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
             <Image
               src="/cry.png"
               alt="Photo 2"
               width={260} // Same dimensions as the first image
               height={260}
               layout="responsive"
-              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+              className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
             />
             {hideDescriptions ? null : (
               <div className="">
@@ -75,9 +75,7 @@ function ImageWithCaption() {
               </div>
             )}
           </div>
-
-          {/* Repeat similar blocks for other images */}
-          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
             <div className="">
               {' '}
               <Image
@@ -86,7 +84,7 @@ function ImageWithCaption() {
                 width={260} // Same dimensions as the first image
                 height={260}
                 layout="responsive"
-                className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+                className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
               />
             </div>
 
@@ -105,15 +103,16 @@ function ImageWithCaption() {
             )}
           </div>
 
+          {/* Repeat similar blocks for other images */}
           {/* Example block for one image */}
-          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
             <Image
               src="/cry.png"
               alt="Photo 2"
               width={260} // Same dimensions as the first image
               height={260}
               layout="responsive"
-              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+              className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
             />
             {hideDescriptions ? null : (
               <div className="">
@@ -131,19 +130,16 @@ function ImageWithCaption() {
           </div>
           {/* Example block for one image */}
           {/* Example block for one image */}
-          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
-            <div className="">
-              {' '}
-              <Image
-                src="/cabane.jpg"
-                alt="Photo 2"
-                width={260} // Same dimensions as the first image
-                height={260}
-                layout="responsive"
-                className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
-              />
-            </div>
-
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
+            {' '}
+            <Image
+              src="/cabane.jpg"
+              alt="Photo 2"
+              width={260} // Same dimensions as the first image
+              height={260}
+              layout="responsive"
+              className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
+            />
             {hideDescriptions ? null : (
               <div className="">
                 <h3 className=" px-2 pt-4 text-xs font-semibold">
@@ -160,14 +156,14 @@ function ImageWithCaption() {
           </div>
           {/* Example block for one image */}
 
-          <div className=" w-full shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
             <Image
               src="/cry.png"
               alt="Photo 2"
               width={260} // Same dimensions as the first image
               height={260}
               layout="responsive"
-              className="w-full object-cover max-h-[260px]" // Consistent styling with the first image
+              className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
             />
 
             {hideDescriptions ? null : (
