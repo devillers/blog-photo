@@ -11,20 +11,21 @@ function ImageWithCaption() {
 
   return (
     <main className="bg-gray-50 font-sans leading-normal tracking-normal">
-      <div className="space-x-4 p-4">
-        <label>
+      <div className="p-4 ">
+        <label className=" uppercase text-sm flex items-center">
           <input
             type="checkbox"
+            className="mr-1"
             checked={hideDescriptions}
             onChange={handleDescriptionToggle}
           />
-          Hide all Descriptions
+          <a>Hide all Descriptions</a>
         </label>
       </div>
       <nav className="bg-white shadow">{/* Existing nav content */}</nav>
 
-      <main className=" mx-auto px-1 pt-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+      <section className=" mx-auto p-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1">
           {/* Example block for one image */}
           <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
             <Image
@@ -65,8 +66,48 @@ function ImageWithCaption() {
           </div>
 
           {/* Repeat similar blocks for other images */}
+          {/* Example block for one image */}
+          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+            <Image
+              src="/cry.png"
+              alt="Photo 1"
+              width={250}
+              height={100}
+              layout="responsive"
+            />
+            {hideDescriptions ? null : (
+              <div className="p-4">
+                <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
+
+                <p className="text-gray-600 mt-2 text-[10px]">
+                  Explore the beauty of landscapes through our photography.
+                </p>
+              </div>
+            )}
+          </div>
+          {/* Example block for one image */}
+          {/* Example block for one image */}
+          <div className="overflow-hidden shadow-lg rounded-sm cursor-pointer m-auto p-2 bg-white">
+            <Image
+              src="/cry.png"
+              alt="Photo 1"
+              width={250}
+              height={100}
+              layout="responsive"
+            />
+            {hideDescriptions ? null : (
+              <div className="p-4">
+                <h3 className="text-xs font-semibold">Stunning Landscapes</h3>
+
+                <p className="text-gray-600 mt-2 text-[10px]">
+                  Explore the beauty of landscapes through our photography.
+                </p>
+              </div>
+            )}
+          </div>
+          {/* Example block for one image */}
         </div>
-      </main>
+      </section>
 
       <footer className="bg-white shadow mt-20 p-4 text-center">
         <p className="text-gray-700 text-[10px]">
