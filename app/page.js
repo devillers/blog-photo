@@ -1,6 +1,7 @@
 'use client'; // This marks the entire file as a Client Component
 import Image from 'next/image';
 import Modal from '../components/modal';
+import Nav from '../components/Nav';
 
 import React, { useState } from 'react';
 function ImageWithCaption() {
@@ -20,7 +21,7 @@ function ImageWithCaption() {
 
   return (
     <>
-      <nav className="bg-white shadow">nav</nav>
+      <Nav />
       <main className="bg-gray-50 font-sans leading-normal tracking-normal">
         <div className="p-4 ">
           <label className=" uppercase text-sm flex items-center">
@@ -34,8 +35,8 @@ function ImageWithCaption() {
           </label>
         </div>
 
-        <section className=" mx-auto p-1">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 ">
+        <section className=" mx-auto ">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[1px] ">
             {/* Example block for one image */}
             <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white">
               <Image
